@@ -10,4 +10,5 @@ with open(file_name + '.jpg', "w+") as f:
     f.write("deneme")
 
 print(file_name)
-print('done')
+print('done.')
+
