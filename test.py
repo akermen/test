@@ -6,7 +6,7 @@ now = datetime.now()
 # yil-ay-gun-saat-dakika-saniye.jpg
 file_name = now.strftime('%Y-%m')
 
-with open(file_name + '.txt', "w+") as f:
+with open(file_name + '.jpg', "w+") as f:
     f.write("deneme")
 
 print(file_name)
