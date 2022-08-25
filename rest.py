@@ -24,9 +24,10 @@ def rest_api_create_qrcodes():
     code = request.form.get('code')
     date = request.form.get('date')
     title = request.form.get('title')
-    qrcodes.append({"code": code, "title": title, "date": date})
-    return "eklendi"
-
+    code = {"code": code, "title": title, "date": date}
+    qrcodes.append(code)
+    print(code)
+    return " -- eklendi --"
 
 @app.route("/qrcodes/<string:code>", methods=['GET'])
 def rest_api_get_qrcode(code):
